@@ -48,7 +48,7 @@ particlesJS("particles", {
     line_linked: {
       enable: true,
       distance: 100,
-      color: "#ffff00",
+      color: "#88D498",
       opacity: 0.4,
       width: 1
     },
@@ -109,14 +109,6 @@ particlesJS("particles", {
   retina_detect: true
 });
 
-var scrollToElement = function(el, ms) {
-  var speed = ms ? ms : 600;
-  $("html,body").animate({
-      scrollTop: $(el).offset().top
-    },
-    speed
-  );
-};
 
 $(document).ready(function() {
   $(".nav-link").on("click", function(e) {
@@ -368,7 +360,7 @@ $(document).ready(function() {
     }),
     (t.Typed = i);
   var r = {
-    strings: ["These are the default values", "Try them", "Use your own!", ".."],
+    strings: ["These are the default values"],
     stringsElement: null,
     typeSpeed: 0,
     startDelay: 0,

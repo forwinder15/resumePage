@@ -1,9 +1,13 @@
-.p-img {
+.john{
+  font-size: 40px;
+}
+
+
+.p-imga {
   text-align: left;
-  width: 110px;
-  height: 115px;
+  width: auto;
   position: absolute;
-  top: 55px;
+  top: 155px;
   left: 55px;
 }
 
@@ -30,9 +34,10 @@ img {
 }
 
 body, html {
-  font-family: "Comfortaa", cursive;
+font-family: 'Cutive', serif;
 height: 100%;
-background-color: #151E3F;
+background-color: #114B5F;
+color:#F3E9D2;
 }
 
 #skills {
@@ -65,7 +70,7 @@ header {
   position: relative;
   width: 100%;
   height: 100vh;
-  color: white;
+  color: #F3E9D2;
 }
 
 body #particles {
@@ -74,14 +79,12 @@ body #particles {
   top: 0;
   left: 0;
 	position: fixed;
-	z-index: -10;
 
 }
 
 
 header .vert-text {
   display: table-cell;
-  position: relative;
   vertical-align: middle;
   text-align: center;
 }
@@ -98,14 +101,14 @@ header .vert-text .scroll-down {
   position: absolute;
   bottom: 12%;
   left: 50%;
-  color: #fff;
+  color: #F3E9D2;
 }
 
 #contacts {
   margin: 0 auto;
   padding: 100px 0;
   width: 100%;
-  color: #fff;
+  color: #F3E9D2;
   transition: all 1.7s ease;
 }
 
@@ -130,6 +133,7 @@ input[type="text"] {
   background: rgba(0, 0, 0, 0.2);
   border: 1px solid #fff;
   transition: all 0.3s ease;
+  font-size: 12px;
 }
 
 textarea {
@@ -141,6 +145,7 @@ textarea {
   outline: none;
   background: rgba(0, 0, 0, 0.2);
   border: 1px solid #fff;
+  font-size: 12px;
   transition: all 0.3s ease;
 }
 
@@ -151,41 +156,43 @@ input[type="text"]:focus {
 }
 
 ::placeholder {
-  color: #fff;
+  color: #F3E9D2;
 }
 
 button {
   border-radius: 100px;
-  color: #fff;
+  color: #F3E9D2;
   margin-top: 20px;
   margin-bottom: 10px;
   padding: 10px;
   height: 45px;
   width: 200px;
   text-align: center;
-  outline: none;background: #151E3F;
+  outline: none;background: #1A936F;
   border: 1px solid #eee;
   box-shadow: 8px 10px 20px 0px rgba(251, 61, 73, 0.15);
   transition: all 0.3s ease;
 }
 
 button:hover {
-  background: purple;
+  background: #88D498;
 }
 
 /* Skills  */
 
 .section-title {
-	color: white;
+	color: #F3E9D2;
 	text-align: center;
 	font-size: 30px;
 }
 
 .section-wrapper .skill-percentage {
   margin-bottom: 10px;
+  margin-left: 10%;
   position: relative;
   width: 500px;
-	color: white;
+	color: #F3E9D2;
+  font-size: 15px;
 }
 
 .section-wrapper .skill-percentage::after {
@@ -194,15 +201,15 @@ button:hover {
   height: 6px;
   background: #4a4e51;
   display: block;
-  margin-top: 3px;
+  margin-top: 4px;
 }
 
 .section-wrapper .skill-percentage::before {
   content: "";
   height: 6px;
-  background: #66cc99;
+  background: #1A936F;
   position: absolute;
-  margin-top: 3px;
+  margin-top: 4px;
   bottom: 0;
 }
 
@@ -354,4 +361,61 @@ button:hover {
   to {
     width: 70%;
   }
+}
+
+/* Social links animation */
+.social {
+  position:static;
+  width: 100%;
+  margin-bottom: 2%;
+  text-align: center;
+  transform: translateY(-50%);
+}
+
+.social .link {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px dashed white;
+  background-clip: content-box;
+  padding: 10px;
+  transition: .5s;
+  color: #D7D0BE;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 55px;
+}
+
+.social .link span {
+  display: block;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.social .link:hover {
+  padding: 20px;
+  color: white;
+  margin-left: -5px;
+  transform: translateX(10px) rotate(360deg);
+}
+
+.social .link.github {
+  background-color: black;
+  color: white;
+}
+
+.social .link.linkedIn {
+  background-color: #0077B5;
+  color: white;
+}
+
+.social .link.facebook {
+  background-color: #3B5998;
+  color: white;
 }
