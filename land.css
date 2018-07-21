@@ -40,9 +40,9 @@ img {
 #phoneimg {
   width: 110px;
   height: 115px;
-  position: fixed;
-  top: 255px;
-  left: 1110px;
+  position: relative;
+  top: 15%;
+  left: 85%;
 }
 
 #logo {
