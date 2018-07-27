@@ -40,9 +40,8 @@ img {
 #phoneimg {
   width: 110px;
   height: 115px;
-  position: relative;
-  top: 10%;
-  left: 90%;
+  position:inherit;
+  margin-left: 10em;
 }
 
 #logo {
@@ -197,12 +196,26 @@ button:hover {
   background: #88D498;
 }
 
+.hobbies{
+  margin-bottom: 10px;
+  left: 50%;
+  position: absolute;
+  width: 500px;
+  color: #F3E9D2;
+  font-size: 15px;
+}
+
+.ph{
+  padding-top: 2em;
+}
+
 /* Skills  */
 
 .section-title {
 	color: #F3E9D2;
 	text-align: center;
 	font-size: 30px;
+  padding-bottom: 1em;
 }
 
 .section-wrapper .skill-percentage {
