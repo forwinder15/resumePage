@@ -84,11 +84,11 @@
         <div class="col-md-6 col-md-offset-3 text-center">
           <h3 class="john">Enter Your Info For A Free Estimate</h3>
 
-          <form>
-            <input type="text" placeholder="Enter First Name" /><br>
-            <input type="text" placeholder="Enter Last Name" /><br>
-            <input type="text" placeholder="Enter Your Email" /><br>
-            <textarea placeholder="Whats your dream?" rows="4" cols="80"></textarea>
+          <form method="post" action="form_process.php">
+            <input name="name" type="text" placeholder="Enter Name" required/><br>
+            <input name="email" type="text" placeholder="Enter email" required/><br>
+            <input name="url" type="text" placeholder="Enter Your website" required/><br>
+            <textarea name="message" type="text" placeholder="Whats your dream?" rows="4" cols="80"></textarea>
             <button>Submit</button>
           </form>
           <p>Copyright © JC Design</p>
